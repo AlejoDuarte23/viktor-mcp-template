@@ -1,0 +1,22 @@
+[project]
+name = "viktor-mcp-server"
+version = "0.3.0"
+description = "FastMCP server exposing VIKTOR engineering tools"
+readme = "README.md"
+authors = [
+    { name = "AlejoDuarte23", email = "alejandro7899871776@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastmcp>=3.2.4",
+    "pydantic>=2.13.3",
+    "python-dotenv>=1.2.2",
+    "requests>=2.33.1",
+]
+
+[project.scripts]
+viktor-mcp-server = "viktor_mcp_server:main"
+
+[build-system]
+requires = ["uv_build>=0.9.7,<0.10.0"]
+build-backend = "uv_build"
